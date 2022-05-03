@@ -9,17 +9,19 @@ using namespace std;
 class CWorker
 {
 protected:
-	
-public:
 	string name, PIN;
+
+public:
 	float dailyPayment;
 	int workDays;
-	
 	CWorker();
 	CWorker(string name, string PIN, float dailyPayment, int workDays);
-	~CWorker(); 
+	~CWorker();
 	void setData();
 	void getData();
-	void pin();
+	string getGender();
+	void menOver();
+	void womenUnder();
+	
 };
 
